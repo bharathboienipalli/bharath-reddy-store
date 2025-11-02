@@ -1,0 +1,14 @@
+import products from "../data/products";
+import ProductCard from "../components/ProductCard";
+
+const Home = () => {
+  return (
+    <div className="product-grid">
+      {products.map((item) => (
+        <ProductCard key={item.id} product={item} />
+      ))}
+    </div>
+  );
+};
+
+export default Home;

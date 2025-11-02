@@ -1,0 +1,144 @@
+.header {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #007bff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #0056b3;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.welcome {
+  font-weight: 500;
+  color: #007bff;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #b02a37;
+}
+
+.cart-link {
+  background-color: #007bff;
+  color: #fff !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.08s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cart-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.cart-count {
+  font-weight: 700;
+}
+
+.login-link {
+  background: #28a745;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.login-link:hover {
+  background: #218838;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .welcome {
+    font-size: 14px;
+  }
+
+  .logout-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
