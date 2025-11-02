@@ -30,7 +30,7 @@ A modern React-based e-commerce frontend with a clean and responsive UI.
 git clone https://github.com/bharathboienipalli/bharath-reddy-store.git
 
 # Go to project directory
-cd bharath_reddy_store
+cd bharath-reddy-store
 
 # Install dependencies
 npm install
